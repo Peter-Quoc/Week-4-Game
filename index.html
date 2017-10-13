@@ -1,0 +1,82 @@
+<!-- Game Logic:
+	Game starts with user choosing their character
+	User Selects Enemy
+	Begin Battle with Attacking
+
+
+Pseudocoding:
+	User will select a player
+		Move the player to My Player area
+	User selects Enemy/Opponent to fight
+		Selected Enemy gets moved to Opponent area
+	Battle Begins!
+	If Opponent health = 0
+		Opponent Area becomes empty, choose next opponent.
+			If no more opponents, You Win!, Replay?
+	If Player health = 0, Game OVER! Replay?
+		Player selects attack!
+		Computer selects random attack!
+			Damage done based on attack.
+
+
+
+Create Objects for each player with attributes
+	Name, Attack Array, Health, Image, Counter attack? 
+	Create Empty Object that takes attribute on Click-->
+
+
+<!DOCTYPE html>
+<html>
+		<!--Linking Bootstrap and CSS sheets-->
+	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+<head>
+	<title>Battle of Hogwarts</title>
+</head>
+<body>
+	<img class="TitleBlock" src="assets/images/BattleTitle.png">
+	<div class="BattleArea">
+		<div class="ChosenPlayer"></div>
+		<div class="AttackButton">
+			<button class="atk">Attack!</button>
+			
+			<!-- DROPDOWN BUTTON -->
+<!-- 			<div class="btn-group">
+					<button type="button" class="btn btn-danger">Choose Attack</button>
+					<button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					<span class="caret"></span>
+					<span class="sr-only">Toggle Dropdown</span>
+				</button>
+				<ul class="dropdown-menu">
+					<li><a href="#">Expelliarmus</a></li>
+					<li><a href="#">Stupify</a></li>
+					<li><a href="#">Protego</a></li>
+					<li><a href="#">Reducto</a></li>
+				</ul>
+			</div> -->
+		</div>	
+		<div class="ChosenEnemy"></div>
+	</div>
+	<div class="Selection">
+		<div class="PlayerSelection">
+			<h3 class="DA Header">Dumbledore's Army</h3>
+				<div class="Player character" id="Harry"></div>
+				<div class="Player character" id="Hermione"></div>
+				<div class="Player character" id="Ron"></div>
+		</div>
+		<div class="OpponentSelection">
+			<h3 class="DeathEaters Header">Death Eaters</h3>
+				<div class="Opponent character" id="Voldemort"></div>
+				<div class="Opponent character" id="Nagini"></div>
+				<div class="Opponent character" id="Bellatrix"></div>
+		<div class="Message"></div>
+		</div>
+	</div>	
+
+	 	<!-- Added link to the jQuery Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<!--Linking JS Game -->
+    <script type="text/javascript" src="assets/javascript/game.js"></script>
+</body>
+</html>

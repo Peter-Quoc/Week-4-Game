@@ -1,0 +1,99 @@
+body {
+	background-image: url("http://www.desktopimages.org/pictures/2013/1212/1/harry-potter-artwork-luna-lovegood-hermione-granger-voldemort-ginny-weasley-ron-weasley-neville-longbottom-lucius-malfoy-bellatrix-lestrange-death-eaters-background-225792.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+h4 {
+	font-weight: bold;
+}
+
+.TitleBlock {
+	height: 250px;
+	width: 250px;
+	margin: auto;
+	display: block;
+	margin-top: 25px;
+	background: rgba(227, 227, 227, .3);
+	padding: 10px;
+}
+
+.Selection {
+	display: inline-block;
+	background: rgba(227, 227, 227, .3);
+	width: 100%;
+	padding-bottom: 20px;
+}
+
+.Header {
+	font-weight: bolder;
+	color: white;
+}
+
+.character {
+	border: 1px solid black;
+	width: auto;
+	text-align: center;
+	display: inline-block;
+	padding: 5px;
+	border-radius: 5px;
+	margin: 3px;
+	font-weight: bolder;
+	background-color: rgba(227, 227, 227, .7);
+}
+
+.Player:hover {
+	background-color: rgba(218,86,86, 1);
+	color: white;
+}
+
+.PlayerSelection {
+	float: left;
+	margin-left: 5%;
+}
+
+.DeathEaters {
+	text-align: right;
+}
+
+.DA {
+	text-align: left;
+}
+
+.Opponent:hover {
+	background-color: rgba(60,236,123, 1);
+}
+
+.OpponentSelection {
+	float: right;
+	margin-right: 5%;
+
+}
+
+.BattleArea {
+	margin: 1%, 15%, 1%, 15%;
+}
+
+.AttackButton {
+	margin-top: 1%;
+	margin-bottom: 1%;
+	float: center;
+	width: 10%;
+}
+
+.ChosenEnemy {
+	float: right;
+	margin-right: 15%;
+	margin-top: 1%;
+	margin-bottom: 1%;
+	width: 20%;
+}
+
+.ChosenPlayer {
+	float: left;
+	margin-left: 15%;
+	margin-top: 1%;
+	margin-bottom: 1%;
+	width: 20%;
+}
+
